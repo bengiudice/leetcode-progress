@@ -1,0 +1,26 @@
+
+=== easy ===
+
+--- array & hashing ---
+
+1    two sum
+121  best time to buy and sell stock
+217  contains duplicate
+242  valid anagram
+392  is subsequence
+1299 replace elements with greatest element on right side
+
+
+
+
+
+=== medium ===
+
+--- array & hashing ---
+
+15   3sum
+33   search in rotated sorted array
+53   maximum subarray
+152  maximum product subarray
+153  find minimum in rotated sorted array
+238  product of array except self
