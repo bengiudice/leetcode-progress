@@ -2,6 +2,7 @@
 === easy ===
  --- array & hashing ---
   1    two sum
+  14   longest common prefix
   58   length of last word 
   217  contains duplicate
   242  valid anagram
