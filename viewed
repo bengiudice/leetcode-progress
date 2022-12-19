@@ -1,26 +1,48 @@
 
 === easy ===
+ --- array & hashing ---
+  1    two sum
+  58   length of last word 
+  217  contains duplicate
+  242  valid anagram
+  392  is subsequence
+  1299 replace elements with greatest element on right side
 
---- array & hashing ---
+ --- two pointers ---
 
-1    two sum
-121  best time to buy and sell stock
-217  contains duplicate
-242  valid anagram
-392  is subsequence
-1299 replace elements with greatest element on right side
+ --- sliding window ---
+  121  best time to buy and sell stock
 
-
-
+ --- stack ---
+ --- binary search ---
+ --- linked list ---
+ --- trees ---
+ --- tries ---
+ --- heap / priority queue ---
+ --- backtracking ---
+ --- graphs ---
+ --- advanced graphs ---
+ --- 1d dynamic programming ---
+ --- 2d dynamic programming ---
+ --- greedy ---
+ --- intervals ---
+ --- math & geometry ---
+ --- bit manipulation ---
 
 
 === medium ===
+ --- array & hashing ---
+  238  product of array except self
 
---- array & hashing ---
+ --- two pointers ---
+  15   3sum
 
-15   3sum
-33   search in rotated sorted array
-53   maximum subarray
-152  maximum product subarray
-153  find minimum in rotated sorted array
-238  product of array except self
+ --- binary search ---
+  33   search in rotated sorted array
+  153  find minimum in rotated sorted array
+
+ --- 1d dynamic programming ---
+  152  maximum product subarray
+
+ --- greedy ---
+  53   maximum subarray
