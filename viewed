@@ -1,4 +1,4 @@
-next: 118  pascals triangle
+next: 
 
 === easy ===
  --- array & hashing ---
@@ -6,10 +6,13 @@ next: 118  pascals triangle
   14   longest common prefix
   27   remove element
   58   length of last word 
+  118  pascals triangle
+  205  isomorphic strings
   217  contains duplicate
   242  valid anagram
   290  word pattern
   392  is subsequence
+  605  can place flowers
   929  unique email addresses
   1299 replace elements with greatest element on right side
 
