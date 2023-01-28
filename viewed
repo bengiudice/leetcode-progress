@@ -40,6 +40,7 @@
  --- binary search ---
   35   search insert position
   374  guess number higher or lower
+  441  arranging coins
   704  binary search
 
  --- linked list ---
