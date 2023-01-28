@@ -1,4 +1,4 @@
-next: find pivot index
+next: 
 
 === easy ===
  --- array & hashing ---
@@ -23,6 +23,8 @@ next: find pivot index
   1299 replace elements with greatest element on right side
 
  --- two pointers ---
+ 125  valid palindrome
+ 680  valid palindrome II
 
  --- sliding window ---
   121  best time to buy and sell stock
