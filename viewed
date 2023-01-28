@@ -12,10 +12,14 @@ next: find pivot index
   217  contains duplicate
   242  valid anagram
   290  word pattern
+  347  bucket sort
   392  is subsequence
+  448  find all numbers disappeared in an array
   496  next greater element I
   605  can place flowers
+  724  find pivot index
   929  unique email addresses
+  1189 maximum number of balloons
   1299 replace elements with greatest element on right side
 
  --- two pointers ---
