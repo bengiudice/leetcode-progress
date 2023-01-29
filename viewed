@@ -55,15 +55,29 @@
 
  --- trees ---
   94   binary tree inorder traversal
+  100  same tree
+  112  path sum
+  108  convert sorted array to binary search tree
   104  maximum depth of binary tree
   110  balanced binary tree
   226  invert binary tree
   543  diameter of a binary tree
+  572  subtree of another tree
+  606  construct string from binary tree
+  617  merge two binary trees
 
  --- tries ---
+
  --- heap / priority queue ---
+  703  kth largest element in a stream
+  1046 last stone weight
+
  --- backtracking ---
+
  --- graphs ---
+  463  island perimeter
+  953  verifying an alien dictionary
+
  --- advanced graphs ---
  --- 1d dynamic programming ---
  --- 2d dynamic programming ---
