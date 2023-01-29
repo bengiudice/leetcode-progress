@@ -92,6 +92,11 @@
 
 === medium ===
  --- array & hashing ---
+  36   valid sudoku
+  49   group anagrams
+  128  longest consecutive sequence
+  271  encode and decode strings
+  347  top k frequent elements
   238  product of array except self
  --- two pointers ---
   15   3sum
