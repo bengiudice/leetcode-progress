@@ -19,7 +19,6 @@
   929  unique email addresses
   1189 maximum number of balloons
   1299 replace elements with greatest element on right side
-
  --- two pointers ---
   26   remove duplicates from sorted array
   88   merge sorted arrays
@@ -28,15 +27,12 @@
   344  reverse string
   680  valid palindrome II
   1984 minimum difference between highest and lowest of k scores
-
  --- sliding window ---
   121  best time to buy and sell stock
-
  --- stack ---
   20   valid parentheses
   225  implement stack using queues
   682  baseball game
-
  --- binary search ---
   35   search insert position
   367  valid perfect square
@@ -44,7 +40,6 @@
   441  arranging coins
   704  binary search
   997  squares of sorted array
-
  --- linked list ---
   21   merge two sorted lists
   83   remove duplicates from sorted list
@@ -52,7 +47,6 @@
   203  remove linked list elements
   206  reverse linked list
   234  palindrome linked list
-
  --- trees ---
   94   binary tree inorder traversal
   100  same tree
@@ -65,41 +59,41 @@
   572  subtree of another tree
   606  construct string from binary tree
   617  merge two binary trees
-
  --- tries ---
-
  --- heap / priority queue ---
   703  kth largest element in a stream
   1046 last stone weight
-
  --- backtracking ---
-
  --- graphs ---
   463  island perimeter
   953  verifying an alien dictionary
-
  --- advanced graphs ---
  --- 1d dynamic programming ---
+  70   climbing stairs
+  746  min cost climbing stairs
  --- 2d dynamic programming ---
  --- greedy ---
  --- intervals ---
+  252  meeting rooms
  --- math & geometry ---
- --- bit manipulation ---
+  9    palindrome number
+  13   roman to integer
+  66   plus one
+  202  happy number
+  263  ugly number
+  1260 shift 2d grid
 
+ --- bit manipulation ---
 
 === medium ===
  --- array & hashing ---
   238  product of array except self
-
  --- two pointers ---
   15   3sum
-
  --- binary search ---
   33   search in rotated sorted array
   153  find minimum in rotated sorted array
-
  --- 1d dynamic programming ---
   152  maximum product subarray
-
  --- greedy ---
   53   maximum subarray
