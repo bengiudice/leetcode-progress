@@ -39,12 +39,26 @@
 
  --- binary search ---
   35   search insert position
+  367  valid perfect square
   374  guess number higher or lower
   441  arranging coins
   704  binary search
+  997  squares of sorted array
 
  --- linked list ---
+  21   merge two sorted lists
+  83   remove duplicates from sorted list
+  160  intersection of two linked lists
+  203  remove linked list elements
+  206  reverse linked list
+  234  palindrome linked list
+
  --- trees ---
+  94   binary tree inorder traversal
+  104  maximum depth of binary tree
+  226  invert binary tree
+  543  diameter of a binary tree
+
  --- tries ---
  --- heap / priority queue ---
  --- backtracking ---
