@@ -20,3 +20,32 @@ binary math
 decision tree
 fast slow linked list pointer
 
+heap / priority queue
+keywords: kth largest closest scheduler frequent max min
+
+backtracking
+keywords: subsets combinations permutations partition bruteforce 
+decision tree
+backtrack fn
+counts remaining hashmap
+can lead to DP
+
+dynamic programming
+no: create each combination
+
+combinations
+loose bound: O kn^k
+tight bound: O kn!/(n-k)!k!
+no-duplicates
+
+permutations
+order matters
+spots choices
+
+subsets
+
+partitions
+
+stuck?
+sort?
+
