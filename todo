@@ -1,8 +1,31 @@
+min heap & priority queue
+heapify O(n)
+add del O(logn)
+use multiple
+pair (_,_)
+
+hashmap
+
+sort
+quicksort
+mergesort
+bucketsort
+
+search
+quickselect Oav(n) O(n2)
+left/right bias binary search
+
+dynamic programming
+overlapping subproblems
+
+divide and conquor
+independent subproblems
+
+
 tree set/map
 monotonic inc/dec stack
 min/max heap
 priority queue
-left/right bias binary search
 iterative/recursive DFS/BFS
 KMC
 invert tree
