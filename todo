@@ -1,27 +1,65 @@
-min heap & priority queue
-heapify O(n)
-add del O(logn)
-use multiple
-pair (_,_)
-
+heap & priority queue
+ keywords: kth largest closest scheduler frequent max min
+ heapify O(n)
+ add del O(logn)
+ use multiple
+ pair (_,_)
 hashmap
-
 sort
-quicksort
-mergesort
-bucketsort
-
+ quicksort
+ mergesort
+ bucketsort
+ topological sort
 search
-quickselect Oav(n) O(n2)
-left/right bias binary search
-
+ quickselect Oav(n) O(n2)
+ left/right bias binary search
 dynamic programming
-overlapping subproblems
-
+ no: create each combination
+ overlapping subproblems
 divide and conquor
-independent subproblems
+ independent subproblems
+
+in-place
+ swap
+ store multiple in one pointer
+
+graph
+ dfs
+ bfs
+ visit hashset
+ ROWS, COLS = len(grid), len(grid[0])
+
+top/least K
+ heap
+ quickselect
+
+common strings
+ map
+ trie
+
+backtracking
+ keywords: subsets combinations permutations partition bruteforce 
+ decision tree
+ bitmask
+ backtrack when decision incorrect
+ pruning
+ O decisions ^ input/height
+ counts remaining hashmap
+ can lead to DP
+combinations
+ loose bound: O kn^k
+ tight bound: O kn!/(n-k)!k!
+ no-duplicates
+permutations
+ order matters
+ spots choices
+subsets
+partitions
+subsequences
 
 
+stuck?
+ sort?
 tree set/map
 monotonic inc/dec stack
 min/max heap
@@ -29,7 +67,8 @@ priority queue
 iterative/recursive DFS/BFS
 KMC
 invert tree
-reverse linked list
+reverse linked list (in-place)
+union find
 pre/post order tree traversal
 sort into and modify BST
 generate all trees
@@ -42,33 +81,4 @@ palindromes
 binary math
 decision tree
 fast slow linked list pointer
-
-heap / priority queue
-keywords: kth largest closest scheduler frequent max min
-
-backtracking
-keywords: subsets combinations permutations partition bruteforce 
-decision tree
-backtrack fn
-counts remaining hashmap
-can lead to DP
-
-dynamic programming
-no: create each combination
-
-combinations
-loose bound: O kn^k
-tight bound: O kn!/(n-k)!k!
-no-duplicates
-
-permutations
-order matters
-spots choices
-
-subsets
-
-partitions
-
-stuck?
-sort?
 
