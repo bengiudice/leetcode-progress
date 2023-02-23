@@ -4,12 +4,15 @@ heap & priority queue
  add del O(logn)
  use multiple
  pair (_,_)
+
 hashmap
+
 sort
  quicksort
  mergesort
  bucketsort
  topological sort
+
 search
  quickselect Oav(n) O(n2)
  left/right bias binary search
@@ -27,6 +30,12 @@ longest increasing subsequence
  decision tree
  dynamic programming
 
+linked list
+ dummy head node
+
+constants
+ inf => float("inf")
+
 
 dynamic programming
  keywords: minimum ways maximum
@@ -41,10 +50,16 @@ dynamic programming
  recurrance relation
  parameters for subproblem
  size of cache
+ key for cache
  make the grid/row and solve from one end
  recognise that a more efficient math solution likely exists
  solve smaller first then move towards larger subproblems
-
+ 2D
+  bruteforce recursion dfs(row,  col)
+  hashmap grid as cache
+  bottom up
+  likely only need one row in memory
+  outside layer row/col
 
 monotonic in/decreasing stack
  
@@ -90,20 +105,25 @@ backtracking
  O decisions ^ input/height
  counts remaining hashmap
  can lead to DP
+
 combinations
  loose bound: O kn^k
  tight bound: O kn!/(n-k)!k!
  no-duplicates
+
 permutations
  order matters
  spots choices
-subsets
-partitions
-subsequences
 
+subsets
+
+partitions
+
+subsequences
 
 stuck?
  sort?
+
 tree set/map
 monotonic inc/dec stack
 min/max heap
