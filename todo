@@ -14,6 +14,20 @@ search
  quickselect Oav(n) O(n2)
  left/right bias binary search
 
+zero
+ neither strictly positive nor strictly negative
+ non-negative
+ non-positive
+ even
+
+longest increasing subsequence
+ lis
+ maintain relative order
+ can skip elements
+ decision tree
+ dynamic programming
+
+
 dynamic programming
  keywords: minimum ways maximum
  no: create each combination
@@ -29,6 +43,8 @@ dynamic programming
  size of cache
  make the grid/row and solve from one end
  recognise that a more efficient math solution likely exists
+ solve smaller first then move towards larger subproblems
+
 
 monotonic in/decreasing stack
  
