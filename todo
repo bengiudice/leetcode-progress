@@ -13,9 +13,27 @@ sort
 search
  quickselect Oav(n) O(n2)
  left/right bias binary search
+
 dynamic programming
+ keywords: minimum ways maximum
  no: create each combination
  overlapping subproblems
+ bottom up
+ dp array
+ brute force recursion decision tree -> cache/memoise -> optimise by DP
+ cache/memoise is top down
+ 1D -> array -> maybe just a few values
+ 2D -> matrix
+ recurrance relation
+ parameters for subproblem
+ size of cache
+ make the grid/row and solve from one end
+ recognise that a more efficient math solution likely exists
+
+monotonic in/decreasing stack
+ 
+pre/postfix array
+
 divide and conquor
  independent subproblems
 
@@ -35,6 +53,9 @@ graph
  direction array
  shortest path: weights=dijstras otherwise=bfs
  bfs supports multiple sources/destinations
+ brute force O E^V
+ dijstras heap greedy ElogV^2=E2logV=ElogV
+ adjacency list hashmap(list)
 
 top/least K
  heap
