@@ -8,8 +8,22 @@ heap & priority queue
 
 hashmap
 
+two pointers
+ calculate maxLeft and maxRight grid via scan
+ pre-calculate useful intermediataries as a grid via scaning
+ can reduce memory to O 1 by replacing calculated-grid with variables and pointers
+ shift minimum pointer
+
 python
  sort(key=lambda i: ...)
+
+sliding window
+ counts hashmap
+ pointers for window edges
+ have counts and need counts
+ grow and shrink window
+ O k(n-k)
+ monotonically inc/dec deque as window
 
 greedy
  kadanes alg (currMax, globalMax)
@@ -27,7 +41,12 @@ intervals
  covering: >=
  sort left point?
  
+strings
+ * appends multiple copies
 
+math & geometry
+ mod %
+ integer division (round down) //
 
 sort
  quicksort
@@ -54,6 +73,10 @@ longest increasing subsequence
 
 linked list
  dummy head node
+ mergeSortedLists via mergesort O klogn
+ mergeLists helper fn
+
+
 
 constants
  inf => float("inf")
