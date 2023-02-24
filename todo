@@ -126,6 +126,17 @@ in-place
  swap
  store multiple in one pointer
 
+tree
+ dfs
+ bfs
+ global vs multiple recursive returns
+ preorder traversal: root, left, right
+ inorder traversal: left, root, right
+ postorder traversal: 
+ N for null
+
+
+
 graph
  dfs
  bfs O n2 queue
