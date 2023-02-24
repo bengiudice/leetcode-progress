@@ -54,6 +54,11 @@ sort
  bucketsort
  topological sort
 
+binary search
+ left/right bias
+ l m r
+
+
 search
  quickselect Oav(n) O(n2)
  left/right bias binary search
@@ -75,6 +80,8 @@ linked list
  dummy head node
  mergeSortedLists via mergesort O klogn
  mergeLists helper fn
+ getKth helper fn
+ tmp for swaping
 
 
 
@@ -106,7 +113,9 @@ dynamic programming
   likely only need one row in memory
   outside layer row/col
 
-monotonic in/decreasing stack
+stack
+ []
+
  
 pre/postfix array
 
