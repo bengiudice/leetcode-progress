@@ -1,10 +1,18 @@
 heap & priority queue
  keywords: kth largest closest scheduler frequent max min
  heapify O(n)
- add del O(logn)
+ add/del O(logn)
+ find min/max O(1)
  use multiple
  pair (_,_)
  can be slightly more efficient than sorting if you dont end up visiting entire array
+ median: small maxheap & large minheap (equal sizes)
+ implmented with arrays
+ []
+
+grid
+ negative diagonal r - c
+ positive diagonal r + c
 
 hashmap
 
@@ -58,7 +66,6 @@ binary search
  left/right bias
  l m r
 
-
 search
  quickselect Oav(n) O(n2)
  left/right bias binary search
@@ -83,11 +90,8 @@ linked list
  getKth helper fn
  tmp for swaping
 
-
-
 constants
  inf => float("inf")
-
 
 dynamic programming
  keywords: minimum ways maximum
@@ -116,7 +120,6 @@ dynamic programming
 stack
  []
 
- 
 pre/postfix array
 
 divide and conquor
@@ -134,9 +137,11 @@ tree
  inorder traversal: left, root, right
  postorder traversal: 
  N for null
-
-
-
+ tree set/map
+ invert tree
+ generate all trees
+ pre/post order tree traversal
+ 
 graph
  dfs
  bfs O n2 queue
@@ -161,6 +166,14 @@ common strings
  map
  trie
 
+trie / prefix tree
+ TrieNode class: 
+  children hashmap & isWord boolean
+  addWord helper fn
+ root = TrieNode()
+ add all words to trie
+ optimisation: delete from trie when word found
+
 backtracking
  keywords: subsets combinations permutations partition bruteforce 
  decision tree
@@ -170,6 +183,9 @@ backtracking
  O decisions ^ input/height
  counts remaining hashmap
  can lead to DP
+ used hashsets
+ backtrack helper fn
+
 
 combinations
  loose bound: O kn^k
@@ -189,18 +205,14 @@ subsequences
 stuck?
  sort?
 
-tree set/map
 monotonic inc/dec stack
 min/max heap
 priority queue
 iterative/recursive DFS/BFS
 KMC
-invert tree
 reverse linked list (in-place)
 union find
-pre/post order tree traversal
 sort into and modify BST
-generate all trees
 combinations
 permutations
 subsets
@@ -208,6 +220,5 @@ subsequences
 anagrams
 palindromes
 binary math
-decision tree
 fast slow linked list pointer
 
