@@ -4,8 +4,30 @@ heap & priority queue
  add del O(logn)
  use multiple
  pair (_,_)
+ can be slightly more efficient than sorting if you dont end up visiting entire array
 
 hashmap
+
+python
+ sort(key=lambda i: ...)
+
+greedy
+ kadanes alg (currMax, globalMax)
+ simultaneous min/max kadanes for circular array. min = sum - max
+ initialise globals with an element of the array
+ bfs with global to eliminate repeated work
+ sliding window (l,r pointer)
+ sort
+ dfs + cache
+ bruteforce decision tree + cache
+ greedy can be better than DP
+
+intervals
+ numberline
+ covering: >=
+ sort left point?
+ 
+
 
 sort
  quicksort
