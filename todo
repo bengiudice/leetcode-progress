@@ -9,6 +9,9 @@ heap & priority queue
  median: small maxheap & large minheap (equal sizes)
  implmented with arrays
  []
+ tiebreaker?
+ when to push?
+ when to pop?
 
 grid
  negative diagonal r - c
@@ -23,11 +26,11 @@ two pointers
  shift minimum pointer
 
 python
- sort(key=lambda i: ...)
+ .sort(key=lambda i: ...) (modifies)
  collections.defaultdict(list)
  temp = list(...)
  enumerate(..)
-
+ sorted(...) (new array)
 
 sliding window
  counts hashmap
@@ -52,7 +55,9 @@ intervals
  numberline
  covering: >=
  sort left point?
- 
+ minHeap?
+
+
 strings
  * appends multiple copies
 
@@ -148,6 +153,7 @@ tree
 graph
  dfs
  bfs O n2 queue
+ prims algo
  visit hashset
  ROWS, COLS = len(grid), len(grid[0])
  O E+V. if backtracking then O (E+V)2
@@ -210,7 +216,6 @@ backtracking
  can lead to DP
  used hashsets
  backtrack helper fn
-
 
 combinations
  loose bound: O kn^k
