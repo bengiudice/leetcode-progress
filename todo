@@ -24,6 +24,10 @@ two pointers
 
 python
  sort(key=lambda i: ...)
+ collections.defaultdict(list)
+ temp = list(...)
+ enumerate(..)
+
 
 sliding window
  counts hashmap
@@ -60,7 +64,6 @@ sort
  quicksort
  mergesort
  bucketsort
- topological sort
 
 binary search
  left/right bias
@@ -135,7 +138,7 @@ tree
  global vs multiple recursive returns
  preorder traversal: root, left, right
  inorder traversal: left, root, right
- postorder traversal: 
+ postorder traversal: letf, right, root
  N for null
  tree set/map
  invert tree
@@ -147,7 +150,8 @@ graph
  bfs O n2 queue
  visit hashset
  ROWS, COLS = len(grid), len(grid[0])
- O E+V
+ O E+V. if backtracking then O (E+V)2
+ mem O(E+V)
  reuse other ds as visit
  out-of-bounds helper fn
  diagonal? (manhattan-distance)
@@ -155,8 +159,29 @@ graph
  shortest path: weights=dijstras otherwise=bfs
  bfs supports multiple sources/destinations
  brute force O E^V
- dijstras heap greedy ElogV^2=E2logV=ElogV
- adjacency list hashmap(list)
+ dijstras 
+  bfs with min heap
+  add all nodes in frontier to minheap
+  maintain nodes as a pair (valToBeMinimised, r, c)
+  pop min and add all nodes it can reach to frontier
+  repeat until arrive at dest
+  greedy
+  ElogV^2=E2logV=ElogV
+ n nodes: max edges = n2
+ adjacency list
+  naive vs efficient method for creating
+  hashmap(list)
+  fancy 
+  collections.defaultdict(list)
+  iterate over input
+  maintain in sorted order (sort input)
+ build result as we DFS
+ backtrack with conditional early return in dfs and reversing decision
+ topological sort
+  dag
+  postorder dfs
+  builds result in reverse order
+  visit & inCurrentPath hashmap
 
 top/least K
  heap
