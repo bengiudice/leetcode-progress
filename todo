@@ -64,6 +64,10 @@ strings
 math & geometry
  mod %
  integer division (round down) //
+ modular arith
+  clock / gear
+  inc -> +1 then mod base
+  dec -> -1 + base then mod base
 
 sort
  quicksort
@@ -105,8 +109,9 @@ dynamic programming
  keywords: minimum ways maximum
  no: create each combination
  overlapping subproblems
- bottom up
- dp array
+ repeated work
+ recursive top-down vs bottom up
+ dp/cache = array || hashmap (easier)
  brute force recursion decision tree -> cache/memoise -> optimise by DP
  cache/memoise is top down
  1D -> array -> maybe just a few values
@@ -124,6 +129,10 @@ dynamic programming
   bottom up
   likely only need one row in memory
   outside layer row/col
+  calculations cache grid
+ find simpler subproblem (2^n is too complex)
+ shift pointers as decision (becomes rows/cols of cache)
+
 
 stack
  []
@@ -158,6 +167,9 @@ graph
  ROWS, COLS = len(grid), len(grid[0])
  O E+V. if backtracking then O (E+V)2
  mem O(E+V)
+ connected?
+ neighbors hashmap
+ edges hashset
  reuse other ds as visit
  out-of-bounds helper fn
  diagonal? (manhattan-distance)
@@ -228,12 +240,19 @@ permutations
 
 subsets
 
+subarrays
+ there are n2
+
 partitions
 
 subsequences
+ maintain relative order
+ can skip
 
 stuck?
  sort?
+ analyse simple cases
+ subproblem?
 
 monotonic inc/dec stack
 min/max heap
