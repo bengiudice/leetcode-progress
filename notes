@@ -57,7 +57,6 @@ intervals
  sort left point?
  minHeap?
 
-
 strings
  * appends multiple copies
 
@@ -77,6 +76,8 @@ sort
 binary search
  left/right bias
  l m r
+ (l + r) // 2
+ l + (r - l) // 2
 
 search
  quickselect Oav(n) O(n2)
@@ -133,9 +134,12 @@ dynamic programming
  find simpler subproblem (2^n is too complex)
  shift pointers as decision (becomes rows/cols of cache)
 
-
 stack
  []
+ {}
+
+count
+ {}
 
 pre/postfix array
 
@@ -253,6 +257,7 @@ stuck?
  sort?
  analyse simple cases
  subproblem?
+ examples!
 
 monotonic inc/dec stack
 min/max heap
