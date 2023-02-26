@@ -13,7 +13,6 @@ heap & priority queue
  when to push?
  when to pop?
 
-
 arrays & hashing
  use input array as extra memory to reduce memory complexity
   perhaps flip the sign of values
@@ -148,6 +147,12 @@ dynamic programming
  find simpler subproblem (2^n is too complex)
  shift pointers as decision (becomes rows/cols of cache)
  cache n subproblems
+ discrete dp timestep grid. col for the dp recurrance relation
+ cache input parameters
+ the more dp subproblem/cache parameters => worse the time complexity
+ dfs(subproblem parameters)
+
+
 
 stack
  []
