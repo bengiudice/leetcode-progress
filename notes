@@ -13,6 +13,12 @@ heap & priority queue
  when to push?
  when to pop?
 
+
+arrays & hashing
+ use input array as extra memory to reduce memory complexity
+  perhaps flip the sign of values
+  some index math
+
 grid
  negative diagonal r - c
  positive diagonal r + c
@@ -31,6 +37,11 @@ python
  temp = list(...)
  enumerate(..)
  sorted(...) (new array)
+ rename inputs to single letters
+ zip(.., ..)
+ [].append([...])
+ heapq.heappush(heap, val)
+ max(..)
 
 sliding window
  counts hashmap
@@ -67,11 +78,14 @@ math & geometry
   clock / gear
   inc -> +1 then mod base
   dec -> -1 + base then mod base
+ n n-1 n-2 ... 2 1 = n!
+ n + n-1 + n-2 ... + 2 + 1 = n2
 
 sort
  quicksort
  mergesort
  bucketsort
+ sort one array coupled to another
 
 binary search
  left/right bias
@@ -232,6 +246,7 @@ backtracking
  can lead to DP
  used hashsets
  backtrack helper fn
+ 
 
 combinations
  loose bound: O kn^k
