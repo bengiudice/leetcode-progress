@@ -147,6 +147,7 @@ dynamic programming
   calculations cache grid
  find simpler subproblem (2^n is too complex)
  shift pointers as decision (becomes rows/cols of cache)
+ cache n subproblems
 
 stack
  []
@@ -219,6 +220,7 @@ graph
   builds result in reverse order
   visit & inCurrentPath hashmap
 
+
 top/least K
  heap
  quickselect
@@ -246,7 +248,7 @@ backtracking
  can lead to DP
  used hashsets
  backtrack helper fn
- 
+ backtrack with conditional early return in dfs and reversing decision
 
 combinations
  loose bound: O kn^k
@@ -267,6 +269,9 @@ partitions
 subsequences
  maintain relative order
  can skip
+
+substrings
+ length n -> 2^n substrings
 
 stuck?
  sort?
