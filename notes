@@ -79,6 +79,8 @@ math & geometry
   dec -> -1 + base then mod base
  n n-1 n-2 ... 2 1 = n!
  n + n-1 + n-2 ... + 2 + 1 = n2
+ log_b(x) = y --> b^y = x
+ 2 to the power of what is equal to. 
 
 sort
  quicksort
@@ -182,6 +184,8 @@ tree
  invert tree
  generate all trees
  pre/post order tree traversal
+ approximately half the size of the tree in in the lowest level
+ doubling the size of the tree just means adding another level
  
 graph
  dfs
