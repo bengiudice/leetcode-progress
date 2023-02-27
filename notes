@@ -284,6 +284,11 @@ stuck?
  subproblem?
  examples!
 
+quicksort
+quickselect
+mergesort
+
+
 monotonic inc/dec stack
 min/max heap
 priority queue
