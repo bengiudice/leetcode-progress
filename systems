@@ -1,0 +1,112 @@
+1 foundations
+ client-server
+ networking
+
+2 key-characteristics
+ availability
+ redundancy
+ throughput
+ latency
+ consistency (up-to-date-ness stale?)
+
+3 components
+ load-balancer
+ caching
+ proxies
+ rate-limiting
+ redirection
+
+4 tech
+ real
+ nginx
+ zookeeper
+ xcd
+ redis
+ amazon s3
+ google cloud storage
+
+client-server
+ server listens
+ client requests
+
+ports
+ dns 53 http 80 https 443 ssh 22
+ 2^16 65535 ports
+
+network protocols
+ IP (2^16B 65535B 0.66MB)
+  header (20-60B): srcip destip size vers
+  data (): TCP
+            header ():
+	    data ():
+ TCP
+  handshake
+  timeout
+  delivery
+  close-out
+  implemented via IP
+ HTTP
+  request response
+  implemented via TCP
+  methods, endpoints
+
+storage
+ databases
+  store & retrieve data
+  server
+  persistence
+   disk
+   memory
+    hashtable array etc
+    fast
+
+latency & throughput
+ 2 most important perforance measures
+ not neceserily collelated
+ latency 
+  (time it takes for data to traverse system)
+  1MB read seq RAM       250 us    0.25 ms
+  1MB read ssd         1 000 us    1    ms
+  1MB 1Gbps network   10 000 us   10    ms
+  1MB HDD             20 000 us   20    ms
+  1pkt ICRT          150 000 us  150    ms
+ throughput
+  (work machine can perform or support in given time)
+  operations system can handle per time unit
+  requests per second RPS
+  queries  per second QPS
+  bottleneck, fit-through
+  pay more -> increase throughput
+  Gbps Mbps Kbps bps
+
+availability
+ resistance to failures
+ fault-tolerance
+ percentage of a systems uptime in a given year
+ nines
+  55.5555555 nine  fives 162.33 days 
+  90         one   nine
+  95         one and a half nines
+  99         two   nines
+  99.9       three nines
+  99.99      four  nines
+  99.999     five  nines
+  99.9999999 nine  nines
+  five nines is the gold standard (5.26 min)
+ service level agreement SLA 
+  SLA is made up of objectives SLOs
+ HA high availability
+ tradeoffs (may increase latency and lower throughput)
+ what subsystems require HA
+ eliminate single points of failure via redundancy
+  may require (multiple) load balancers
+  pasive redundancy
+   adding extra servers
+   aeroplane engines
+  active redundancy
+   swarm which reacts to single failures
+   warm servers?
+   reconfigure
+   leader election?
+ rigourous process in place to handle and react to failures
+ 
