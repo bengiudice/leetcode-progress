@@ -13,10 +13,26 @@ heap & priority queue
  when to push?
  when to pop?
 
-arrays & hashing
+arrays 
  use input array as extra memory to reduce memory complexity
   perhaps flip the sign of values
   some index math
+  x = ab + c
+  x % 
+ static
+  fixed
+  get O1
+  del ONT O1M
+  set O1
+  init ON
+  trav O(N)t O(1)m
+  copy ON
+  insert O(N)t O(1)m
+  pop_end O1
+ dynamic
+  init twice as much memory as required
+  or smallest power of 2 greater than the lenght specified
+  append O(1)tam O(N)m
 
 grid
  negative diagonal r - c
@@ -117,6 +133,25 @@ linked list
  mergeLists helper fn
  getKth helper fn
  tmp for swaping
+ node = value + nextPointer (requires two memory slots back to back allocated)
+ get ON O1
+ set ON O1
+ init ON
+ insert ON O1
+ copy ON
+ trav ON O1
+ del ON O1
+ append ON
+ prefix O1
+ modify when you've maintained references (and prev) O1
+ doubly linked
+  head & tail pointers
+  prev, val, next slots in node
+  again pure modify is O1 as long as you already have a reference
+ customise to suit your needs
+ can be circular
+
+  
 
 constants
  inf => float("inf")
