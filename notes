@@ -17,33 +17,42 @@ arrays
  use input array as extra memory to reduce memory complexity
   perhaps flip the sign of values
   some index math
-  x = ab + c
+  x = yb + r
   x % 
  static
   fixed
   get O1
-  del ONT O1M
+  del ON O1
   set O1
   init ON
-  trav O(N)t O(1)m
+  trav ON O1
   copy ON
-  insert O(N)t O(1)m
+  insert ON O1
   pop_end O1
  dynamic
   init twice as much memory as required
   or smallest power of 2 greater than the lenght specified
-  append O(1)tam O(N)m
+  append O1am ON
 
-grid
+grid / matrix
  negative diagonal r - c
  positive diagonal r + c
 
-hashmap
+hashmap hashtable
+ key -> val pair
+ add del search O1 average
+ built on top of dynamic arrays
+ hash function modulo arraylen -> index
+ each array index is a linked list
+ each node in linked list maintains its original key
+ minimise collisions
+ accept hashing keys is a constant time operation (actually it is OM)
+ resizing
 
 two pointers
  calculate maxLeft and maxRight grid via scan
  pre-calculate useful intermediataries as a grid via scaning
- can reduce memory to O 1 by replacing calculated-grid with variables and pointers
+ can reduce memory to O1 by replacing calculated-grid with variables and pointers
  shift minimum pointer
 
 python
@@ -85,6 +94,14 @@ intervals
 
 strings
  * appends multiple copies
+ + or += ON
+ strings are immutable in python so split into character array then operate
+ "".join(list) O1
+ trav ON
+ get O1
+ append ON
+ copy ON
+
 
 math & geometry
  mod %
@@ -189,11 +206,23 @@ dynamic programming
  the more dp subproblem/cache parameters => worse the time complexity
  dfs(subproblem parameters)
 
-
+queue
+ fifo lilo
+ enqueue dequeue O1
+ doubly linked list with head & tail ptrs
+ init O1
+ priority queue
+ peek O1
 
 stack
+ filo lifo
+ push pop O1
+ init O1
  []
  {}
+ dynamic array or singly linked list
+ min / max stack
+ peek O1
 
 count
  {}
@@ -221,6 +250,21 @@ tree
  pre/post order tree traversal
  approximately half the size of the tree in in the lowest level
  doubling the size of the tree just means adding another level
+ min max heap can be implemented as binary trees
+ complete - all levels filled, final in process from left to right
+ full - every node has either none or k children
+ perfect tree - all leaf nodes have the same depth
+ leaf - no child nodes
+ balanced - nodes left and right subtrees heighs differ by no more than 1
+ branch - path from root to leaf
+ depth of node - distance from root (also level)
+ kary tree
+ height is only OlogN avg if balanced, worst case ON
+ height is the length of its longest branch
+ traverse ON
+ store ON
+ auto balancing red-black, avl
+
  
 graph
  dfs
@@ -263,7 +307,11 @@ graph
   postorder dfs
   builds result in reverse order
   visit & inCurrentPath hashmap
-
+ collection of nodes. may or may not be connected
+ cycle 3 or more nodes that you can revisit
+ clarify what constitutes a cycle in coding interviews!
+ store O E+V
+ trav O E+V
 
 top/least K
  heap
