@@ -110,3 +110,53 @@ availability
    leader election?
  rigourous process in place to handle and react to failures
  
+caching
+ important!
+ reduce or improve the latency
+ storing data in different location such that it's faster to access
+ client level
+ server level
+ hardware level
+ in-between (server-database or client-server) level
+ network request or computationally long operation or avoid too many reads
+ write cache
+  write through
+   overwrite cace -> then overwrite database
+   downside it still requires a database transaction
+ write back
+  overwrite cache, leave database as old. 
+  asynchronously update the database with the cache
+  could be on intervals or event or full (eviction)
+  could lose data as cache likely in memory
+ cache invalidation / stale ?
+  single cache or single source of truth
+  do we care about the accuracy of the data?
+ static is good for cache
+ mutable data is tricky
+ single entity read/write to data is good for cache
+ dont care about consistency / staleness then good for cache
+ eviction policies
+  LRU (least recently used)
+  LFU (least frequently used)
+  LIFO
+  FIFO
+  Random
+ CDN content delivery network
+  PoPs points of presence
+  lowers latency for particular regions
+  Cloudflare, Google Cloud CDN
+
+proxy
+ forward (default)
+  server between clients (or set of) and server (or set of)
+  on the clients team
+  acts on the client's behalf
+  middle-man
+  server thinks it is interacting with a client
+ reverse
+  I am the server now ;) 
+  acts on behalf of the server
+  client thinks it is interacting with the server
+  useful!
+  filter, logging, cache, load balancer
+  nginx webserver reverse-proxy load-balancer
