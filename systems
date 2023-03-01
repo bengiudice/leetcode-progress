@@ -240,4 +240,83 @@ non-relational databases
  custom query language
  
 key-value store
- 
+ database
+ key-strings or sometimes other
+ hashtable
+ caching, dynamic configuration
+ some persist to disk
+ dynamoDB
+ etcd (strongly consistent, HA, leader-election)
+ redis (in-memory, fast best effort caching, rate limiting)
+  expiry time
+ zookeeper (strongly consistent, HA, important conf, leader-election)
+ simple, fast lookups
+ strong/eventual consistency
+
+specialised sotrage
+ blob-store
+  arbitary piece of unstructured data
+  optimised for massive unstructured data
+  behave like key-value pairs
+  key
+  large binaries, database snapshots, images, static assets
+  google-cloud-storage s3 azure-blob
+ time-seriesdb
+  time-series data
+  data points occurr at a moment in time
+  rolling average / local maxima/minima
+  monitoring telemetry stock-prices crypto-prices
+  iot events streams
+  influxDB
+  graphite
+  prometheus
+ graphdb
+  relationship is first-class
+  deeply connected
+  multiple levels of relationships
+  social-networks
+  links
+  neo4j (cypher is sql for graphs)
+ spatialdb
+  geometric space
+  locations
+  spacial index
+  r-tree kd-tree n-tree
+  quadtree
+   grid
+   0 or 4 children
+   subdivide into quadrants if there are still more than k elements
+   log4(n)
+ pagination (dont return all results, just first k)
+ may get away with out of the box optimisations for some of the more general dbs
+  ask interviewer
+
+replication and sharding
+ systems performance is often only as good as the DBs
+ redundancy, partitioning
+ replica duplicate standby db
+  takes over when main db fails
+  write to main db, sync write to replica
+  cannot be out of date
+ async replication
+  better latency in areas
+ multiple database servers?
+ replication
+  duplicate data form one db server to others
+  redundancy, failure tolerance
+  move data closer to clients (decrease latency)
+ sharding (data partitioning)
+  splitting database into two or more pieces
+  strategies
+   client region, type, hash of column
+  increases throughput, reduce storage
+  shard based on rows
+  need balanced distribution
+  avoid hotspots
+  use hashing function
+   potentially consistent
+   but doesn't protect from failure
+  partitioning logic in reverse proxy
+ multiple databases vs one db with sharding?
+
+leader election
