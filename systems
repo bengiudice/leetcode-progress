@@ -96,6 +96,7 @@ availability
  service level agreement SLA 
   SLA is made up of objectives SLOs
  HA high availability
+  5 nines or more
  tradeoffs (may increase latency and lower throughput)
  what subsystems require HA
  eliminate single points of failure via redundancy
@@ -320,3 +321,33 @@ replication and sharding
  multiple databases vs one db with sharding?
 
 leader election
+ advanced
+ action you don't want to perform multiple times
+ leader is only one that acts
+ followers standby
+ distributed consensus is difficult
+ consensus algorithms
+  math heavy
+  multiple nodes in cluster to agree on a data value
+  paxos raft
+  complicated
+  zookeper etcd (happen to allow you to implement leader election)
+  etcd
+   key-value store
+   highly available
+   strongly consistent (guaranteed to return the same values)
+   raft consensus algorithm
+   use etcd key:leader val:serverID to implement leader election
+
+peer-to-peer networks
+ advanced
+ good for high throughput data transfer
+ peer discovery
+ peer selection
+ central orchistrator / tracker
+ gossip / epidemic protocol
+  mapping of chunk to ip address hashtable which they share when communicating
+  distributed hash table DHT
+ chunks are numbered
+ kraken from uber
+
