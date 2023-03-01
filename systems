@@ -160,3 +160,84 @@ proxy
   useful!
   filter, logging, cache, load balancer
   nginx webserver reverse-proxy load-balancer
+
+load balancer
+ facilitates horizontal scaling
+ clients -- load balancer -- servers
+ increases throughput, lower latency, better use of resources
+ type of reverse proxy
+ useful for dns, database, webserver
+ types
+  hardware / software
+  do more / customise / scaling with software
+ register / deregister servers with load-balancer
+ redirection / distribution / server selection strategies
+  random
+  round-robin
+  weighted round-robin
+  performance / load (health checks: lowest load, response time, traffic )
+  ip (hash ip then redirect, good for caching)
+  path (functionality)
+ redundant load balancers
+ plan to avoid hot spots
+
+hashing
+ hash the request and distribute via loadbalancer
+ mod #servers
+ data -> fixed size (int) value
+ algorithms
+  consistent
+   circle, hash serverIDs, hash clientIDs, move clockwise, first server = handler
+   add or remove server = maintain most of the client-server mappings
+   maintains some level of consistency of clients and servers
+   hash serverIDs multiple ways = place them multiple times on circle
+   weight by placing (hashing multiple) one server multiple times
+  rendezvous
+   rank servers per client
+   highest random weight
+   minimises remapping
+ md5 sha3 ... 
+ uniformity!
+ adding a server, or a server fails
+  change mod value
+  however redistributes and = cache misses. 
+  bad
+  solution consistent rendezvous
+
+database
+ server. disk/memory. record/query data. long lived
+ interact via network protocols
+
+relational databases
+ structured
+ schema
+ normalised
+ tables (relations) -> represent an entity
+ rows represent instances of an entity (records)
+ cols represent atributes of an entity instance
+ rows, cols, datatypes
+ rigourous, well defined
+ most support SQL 
+  perform queries directly on the database, dont have to load the data first
+ SQL database
+ postgresql
+ powerful querying
+ ACID transaction
+  atomicity (sub-operations as a block. All fail/succeed. no inbetween.)
+  consistency (strong) (follow rules, no stale state, no invalid state)
+  isolation (multiple parallel transactions same effect as serial)
+  durability (saved, persist over crash/powerloss)
+ index
+  complex!
+  aux datastructre optimised for searching on a particular column
+  more space use, write operations slower
+ important!
+ eventual consistency
+  reads may be stale, eventually correct
+
+non-relational databases
+ semi-structured
+ custom query language
+ 
+key-value store
+ 
