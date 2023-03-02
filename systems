@@ -488,10 +488,95 @@ planning
  write a plan for design
  1 or 2 minutes
  bullet points or numbered steps
+ after requirements
   A storage 1,2
   B functionality 1,2,3
   A buyer
   B seller
 
 estimation
+ do it
+ mem < ssd < network < hdd < net-continental-round-trip
+ 1 MB RAM                         100     us
+ 1 MB SSD                           1     ms
+ 1 MB network                      10     ms
+ 1 MB HDD                          10     ms
+ inter-continental round trip     100     ms
+ char                               1      B
+ brief metadata (name, desc, attr)  1     KB
+ image high-q 1920-1080             1     MB
+ image lossy-compressed            10      x
+ 20 mins HD video                   1     GB
+ server storage                    10     TB
+ server memory                      1     TB
+ http request intra-c             100     ms
+ http request cross-c round         1      s
+ 4G smartphone                      1   MB/s
+ public internet (home wifi)       10   MB/s
+ within data centre                 1   GB/s
+
+communication
+ justify each decision
+ think out loud
+ confirm approach with interviewer regularly
  
+diagramming
+ write approach / requirements notes at left
+ make sure you have space
+ use color / consistent symbols
+ label all nodes / edges
+
+other
+ CAP theorem
+  consistency, availability, partition tolerance
+  distributed system can only achieve 2/3
+  almost all useful systems have network partition tolerance so
+   = consistency, availability. pick one. 
+ database lock
+  ACID will cause updating rows to lock
+  block
+  atomicity
+ hot spot
+  hashing function or sharding key are sub-optimal
+ microservice architecture
+  many small web services compiled and deployed independently
+  counterpart of monoliths
+  split monolith once it reaches a very large size
+ pagination
+  large response from network request API returns only a single page
+  plus an identifier or token for the client to request the next page
+  list api endpoints
+ peer-to-peer network
+  divide workload between themselves
+ percentiles
+  latency distribution
+  Xth percentile is 100ms
+  X% of the requests have latencies of 100ms or less
+  may be in a SLA
+ process
+  program that is currently running
+  always assume process may get terminated at any time
+ sharding
+  data partitioning
+  split database into shards
+  increase throughput
+  region type column-hash
+ socket
+  file which represents a TCP connection.
+  process can read/write to file to act as a sream
+ stateful
+  functionality from storing / retrieving from disk
+  databases
+  difficult to manage
+  cant be stopped and restarted on any machine
+ stateless
+  does not require state to be persisted to disk
+  can hold some state i.e caching layers
+  can run process same way on any machine and move it around
+ worker pool pattern
+  pool of workers take tasks off a single shared queue
+  process independently
+  each task at least once
+  to handle network partitions workers must confirm status of task after completion
+   success / failure
+ task queue pattern
