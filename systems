@@ -351,3 +351,147 @@ peer-to-peer networks
  chunks are numbered
  kraken from uber
 
+polling and streaming
+ polling
+  clients request for data from server on set interval
+ streaming
+  open long lived socket
+  clients listen
+  server pushes data to client
+  pushing
+  continuous
+  instantaneous
+  high frequency
+
+configuration
+ set of parameters/constants
+ isolated file
+ yaml/json
+ static 
+  (bundled/packaged with codebase)
+  safer slower
+ dynamic
+  separate from application code
+  backed by db that your app queries
+  quick risk
+  tools / review / access controls / deployment systems around cfg
+   review process for changes
+   deployed at a faster cycle
+   
+rate limiting
+ security performance
+ limiting the amount of operations that can be performed in a given time
+ users, ip, region, entire system
+ can fall apart in distributed systems
+  unless very reliable consistent load balancing
+  solution
+   distributed database of rate-limiting info e.g redis
+ tier based rate limiting?
+
+logging, monitoring and alerting
+ collect and store in db
+ syslog, json format
+ meaningful metrics
+ fails /wk
+ logins /wk
+ systems in place to monitor
+ can scrape logs to generate metrics out of them
+ time-series db
+  serves periodically send metrics to this db
+  graphana to create graphs
+ hook monitoring system into slack
+ alerting system
+
+publish/subscribe pubsub pattern 
+ publisher subscriber topic messsages
+ topics contain a persistent database of messages
+ guaranteed at least once delivery
+ publishers publish to topics
+ susbsribers subscribe to topics
+ subscribers send ack to topics on recipt of message
+ idempotent operation
+  multiple operations have same effect as one
+  often messages need to be idempotent
+ topic are a queue
+ message ordering
+ replay
+ different topics for
+  different data
+  regions
+  users etc
+  separation of concerns
+  can add filtering/features to individual topics
+ kafka google cloud pubsub
+ end-to-end encription
+
+map reduce
+ distributed filesystem with central control plane
+ map data to k/v pairs then reduce
+ send the map functions to the data so they run locally (dont move the data)
+ map and reduce functions must be idempotent
+  they may fail and control plane will retry
+ reorganise kv pairs and reduce by worker nodes
+ shuffle/reorganise kv pair
+ shuffle step pairs of the same key are routed to the same worker node
+ distributed file system
+  abstraction over a large cluster of machines
+  act as one large file system
+  Google file system GFS
+  hadoop distributed file system hdfs
+  files split into chunks and chunks are sharded accross cluster
+  central control plane decides where chunks reside, routing reads and coms
+  extremely large scale persistent storage
+  hadoop supports mapreduce
+   over hdfs
+
+security
+ symmectric encryption
+  1 key, aes (advanced encription standard)
+  1 key encripts and decripts data
+  shared key
+  fast
+ asymmectric encryption
+  public key
+  private key
+  pair of keys mathematically bound
+  anyone can encrypt data with public key
+  only the holder of the private key can decrypt data
+  slower
+ https
+  runs on tls transport-layer-security
+   ssl was the predecesor (secure sockets layer)
+    certificate
+   handshake
+  first asymetric key handshake then symetric sesion key
+
+API design
+ "design the twitter API"
+ what part? who consuming? 
+ swagger
+  interface description language IDL
+  format to describe apis
+ vs plaintext
+ access control list acl
+ pagination
+ crud cread read update delete
+ json yaml
+ 10mins gather requirements
+
+clarify
+ 10mins at start
+ what functionality? can be very detailed
+ what scale? how many users? global userbase? regional userbase?
+  how much data can a user upload etc?
+ latency? availability? consistency? throughput?
+
+planning
+ write a plan for design
+ 1 or 2 minutes
+ bullet points or numbered steps
+  A storage 1,2
+  B functionality 1,2,3
+  A buyer
+  B seller
+
+estimation
+ 
